@@ -391,4 +391,5 @@ client.add_signal("unfocus", function(c) c.border_color = beautiful.border_norma
 
 
 -- Conky wird automatisch gestartet hier koennen evtl. weitere Befehle eingetragen werden
+-- Mehrere Conky-Screens koennen mit Parameter -c und Pfad zur weiteren RC geoeffnet werden
 awful.util.spawn_with_shell("conky &")
