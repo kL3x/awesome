@@ -1,4 +1,5 @@
 -- Standard awesome library
+vicious = require("vicious")
 require("awful")
 require("awful.autofocus")
 require("awful.rules")
@@ -203,12 +204,16 @@ root.buttons(awful.util.table.join(
 -- {{{ Key bindings
 globalkeys = awful.util.table.join(
 
+     -- My Bindings
+awful.key({ modkey, "Control" }, "F1", function () awful.util.spawn_with_shell("/home/daniel/skripte/startmeup.sh") end),
+
     awful.key({ modkey,           }, "Left",   awful.tag.viewprev       ),
     awful.key({ modkey,           }, "Right",  awful.tag.viewnext       ),
     awful.key({ modkey,           }, "Escape", awful.tag.history.restore),
 
     awful.key({ modkey,           }, "j",
-    
+   
+ 
     function ()
             awful.client.focus.byidx( 1)
             if client.focus then client.focus:raise() end
