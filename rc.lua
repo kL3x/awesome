@@ -72,6 +72,7 @@ layouts =
 
 -- {{{ Tags
 -- Define a tag table which hold all screen tags.
+-- Meine Standard Tag-Ansicht mit unterschiedlichen Layouts
 tags = {
    names  = { "start", "www", "term", "cssh", "office", "data", 7, 8, 9 },
    layout = { layouts[12], layouts[9], layouts[1], layouts[6], layouts[12],
